@@ -324,6 +324,7 @@ ul.topnav li.icon {
         display: block;
         text-align: left;
     }
+
 }
 
 
@@ -507,15 +508,15 @@ h4 {
 }
 
 #under-construction {
-    transform:translate(-.5in,.05in);
-    max-width: 100px;
+    transform:translate(-.25in,.12in);
+    max-width: 70px;
     position: relative;
     opacity: .8;
     position: absolute;
 }
 
 .sm-under-construction {
-    max-width: 80px;
+    max-width: 50px;
     position: relative;
     opacity: .8;
     position: absolute;
