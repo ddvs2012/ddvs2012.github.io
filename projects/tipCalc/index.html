@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type='text/javascript' src="scripts/scripts.js" async></script>
+	
+<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- font awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- jQuery -->
+	<script
+			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous" ></script>
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Tip Calculator</title>
+</head>
+<style>	
+	div{margin:15px; }
+	.input-group{max-width: 29%;}	
+	#tip,#total{display:inline; margin:2 2 2 2 ;}
+	button{margin-left:15px;}
+	.well{background:#51D6B9; color:#FFF; font-size: 1.1em; font-family: arial; border-color:#43B298;padding:12px; }
+
+	@media (max-width:500px){
+		.input-group{max-width: 100%;}
+		#tip, #total{
+			max-width: 100%;;
+		}
+	}
+</style>
+
+<body >
+<div class="container-fluid">
+	<h1>Tip Calculator</h1>
+
+	<div class="input-group">
+		<span class="input-group-addon" >$</span>
+		<input class="form-control" id="subTotal" placeholder="Total Before Tip" type="" >
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon">%</span>
+		<input class="form-control" id="tipPercent" placeholder="Tip Percentage" type="" step="any">
+	</div>
+	<button class="btn btn-info btn-lg" onclick="calculate()">Calculate</button>
+	
+	<div id="tip"></div><div id="total"></div>
+	<!-- error messgae not working -->
+	<!-- <div id ="error"></div> -->
+</div>	
+<script>
+	function init() {
+	    // Clear forms here
+	    document.getElementById("subTotal").value = "";
+	    document.getElementById("tipPercent").value = "";
+	}
+	window.onload = init;
+  	function calculate(){
+
+	  	subTotal = parseFloat(document.getElementById('subTotal').value);
+	  	tipPercent = parseFloat((document.getElementById('tipPercent').value)/100);
+	  	  	
+	    $('#tip').html('<span class="well">Tip: $' + (Math.round(parseFloat(subTotal*tipPercent)*100)/100).toFixed(2) + '</span>');
+	    						    			   
+	  	$('#total').html('<span class="well">Total: $' + (Math.round(parseFloat(subTotal + (subTotal*tipPercent))*100)/100).toFixed(2) + '</span>');	   
+  	}
+  	//error messgae not working
+  	// if(subTotal === NaN|tipPercent === NaN){
+	  // 		$('#error').html('Invalid');
+	  // 	}
+	
+</script>
+</body>
+</html>

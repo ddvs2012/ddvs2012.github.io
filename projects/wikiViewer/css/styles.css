@@ -1,0 +1,90 @@
+@media only screen and (max-width: 768px) {
+ #searchInput {
+    margin:0 auto;
+  }
+ li{
+	 font-size:0.8em;
+ }
+}
+@media(max-width:500px){
+	#searchInput, #search{
+		width: 100% ;
+	}
+	img{
+		width:50% !important;
+	}
+	#output{
+		transform:translateX(-.2in);
+		
+	}
+
+}
+/* needs important? */
+body{
+	background-color:#453EA5 !important;
+	background-size:cover;
+	background-repeat:no-repeat;
+	
+}
+
+
+header{
+	text-align:center;
+	font-family: bungee;
+	font-size: 40px;
+	font-weight: 500;
+	margin: 15 0 0 0;
+}
+
+/* needs important? */
+h1
+{
+	text-align:right;
+	font-family: andale-mono;
+	color:#FCFCFC !important;
+}
+
+h3{
+	text-align:right;
+	font-family:Baloo Thambi, cursive !important ;
+	color:#FCFCFC !important;
+	font-size:3em !important;
+	font-weight: bold !important;
+}
+h6
+{
+	font-family: andale-mono;
+	color:#FCFCFC !important;
+	text-align:center;
+}
+#interactArea{
+	margin: 10% auto;
+}
+.textCenter{
+	text-align:center;
+}
+img{
+	width: 20%;
+	margin: 0 auto;
+}
+form{
+	font-size: 20px;
+	text-align:center;
+	margin-top: 5%;
+}
+#output{
+	font-size:1.5em;
+}
+a{
+	color:#7397b7 !important;
+	font-size:1.5em;
+}
+/* unnecessary but useful */
+/* li:empty{
+	display:none;
+} */
+#results{
+	margin: 0 5%;
+	padding-bottom:20%;
+	color:white ;
+}

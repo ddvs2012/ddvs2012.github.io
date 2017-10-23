@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+* {
+    margin: 0;
+}
+
+body{
+    background-color:#15323E;
+    overflow-x: hidden;
+    height :100%;
+}
+.title, .well{
+  position:relative;
+  z-index: 1 !important;
+}
+
+#gif{
+  width:495px;
+  z-index: 0;
+  position:absolute;
+  transform: translate(-2.8in);
+}
+#contact-info{
+  background-color: rgba(0,0,0,.8) !important;
+}
+#social-bar {
+    transform: translate(0in, 1.3in);
+    list-style-type: none;
+    
+}
+
+.social-item {
+    margin: 10px;
+    color: #FFF;
+    display: inline;
+}
+#social-logo{
+  max-width:100px;
+  transform: translate(-0.1in,-0.2in)
+}
+.container {
+    margin: 0 auto;
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.box {
+    align-items: center;
+    background: #17383D;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    color: white;
+    display: flex;
+    font: 30px "roboto", sans-serif;
+    font-weight: 100;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px;
+    transition: all 300ms ease-in-out;
+}
+
+.box p {
+    padding-left: 5px;
+}
+
+.box1:hover {
+    background: #2A6870;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.box1:active {
+    background: #50C6D3;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 50ms;
+}
+
+.box2:hover {
+    background: #2A6870;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22)
+}
+
+.box2:active {
+    background: #50C6D3;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 50ms;
+}
+
+.box3:hover {
+    background: #2A6870;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.box3:active {
+    background: #50C6D3;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 50ms;
+}
+
+.topnav {
+    z-index: 1000;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+/* Float the list items side by side */
+
+ul.topnav li {
+    float: left;
+}
+
+
+/* Style the links inside the list items */
+
+ul.topnav li a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+#profile2,
+#profile3 {
+    border-radius: 3px;
+}
+
+
+
+
+/* Change background color of links on hover */
+
+ul.topnav li a:hover {
+    background-color: #555;
+}
+
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+
+ul.topnav li.icon {
+    display: none;
+}
+
+
+/**************************queries***********************/
+
+@media (min-width: 992px) {
+    #firstP {
+        transform: translateY(.25in);
+    }
+    #profile {
+        transform: translateY(-.1in);
+    }
+    .well1 {
+        margin-top: -100px;
+        width: 100% !important;
+    }
+    #profile3{
+      max-width: 220px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .well1 {
+        margin-top: -100px;
+        width: 100%;
+    }
+    #gif{
+        width:518px;
+    }
+    #firstP,
+    #lastP,
+    #middleP {
+        width: 100% !important;
+    }
+    #firstP {
+        padding-top: 40px;
+    }
+    #profile2 {
+        max-width: 49%;
+        margin: 0 !important;
+        padding-right: 5px;
+    }
+    #profile3 { 
+        margin: 0 !important;
+    }
+    .box {
+        width: 100%;
+        margin: 5px 0px 5px 0px;
+    }
+}
+
+@media (max-width: 868px) {
+    h1 {
+        font-size: 2em;
+    }
+    #about-title{
+        font-size: 3.5em;
+    }
+    .container {
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    #gif{
+        transform: translate(-2.8in)
+        width:400px;
+    }
+} 
+
+@media (max-width: 548px) {
+    .well1 {
+        margin-top: -100px;
+    }
+    #profile {
+        transform: translateY(-.1in);
+    }
+    #profile2 {
+        max-width: 49%;
+        margin: 0 !important;
+    }
+    #profile3 {
+        max-width: 49% !important;
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .well1 {
+        margin-top: -170px;
+    }
+}
+
+@media (max-width: 414px) {
+    /***********************iphone6 plus******************************/
+    
+    #gif{
+        width: 585px;
+    }
+    #contact-info{
+        padding:60px 0px 60px 0px;
+        font-size: 2rem;
+    }
+    #social-bar {
+        transform: translate(.1in, .6in);
+        font-size: .7rem;
+        padding: 15px;
+    }
+    #social-logo{
+      max-width:60px;
+      transform: translate(-0.1in,-.1in)
+    }
+    .well1 {
+        margin-top: -210px;
+    }
+    #profile {
+        width: 70%;
+    }
+}
+
+@media (max-width: 360px) {
+        /***********************Galaxy S5******************************/
+    #gif{
+        transform: translate(-3.6in);
+        width: 625px;
+    }
+    .well1 {
+        margin-top: -170px;
+    }
+    .emphasis {
+        font-size: 1.1em !important;
+    }
+    #profile {
+        width: 60%;
+    }
+}
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media screen and (max-width:680px) {
+    ul.topnav li:not(: first-child) {
+        display: none;
+    }
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {
+        position: fixed;
+    }
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+
+/*@media (max-width: 470px) {
+  .box1 {makes them small buttons in mobile
+    border-radius: 100%;
+    height: 37px;
+    width: 37px;
+  }
+  .box1 p {
+    display: none;
+  }
+  .page {
+    padding: 20px 2px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+}*/
+
+
+/*demarcate(*****************************************************************************************/
+
+#myTopnav {
+    background-color: rgba(0, 0, 0, .95) !important;
+    display: inline-block !important;
+    width: 100% !important;
+}
+
+img {
+    margin-top: 0;
+}
+
+.well {
+    padding-top: 40px;
+    background-color: rgba(0, 0, 0, .6);
+    border-color: rgba(0, 0, 0, .1)
+}
+
+#intro {
+    font-size: 1.5em;
+}
+
+#intro2 {
+    transform: translateY(0.1in);
+}
+
+small {
+    color: #FCF950 !important;
+}
+
+#enter {
+    background-image: url('https://s23.postimg.org/6s7biykxn/landscape_beach_poland_tilt_shift.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about {
+    padding: 20px;
+    padding-bottom: 130px;
+    background: #286090;
+}
+
+
+.title h1 {
+    text-align: left;
+}
+
+#about p {
+    width: 70%;
+    color: #FFF;
+    font-family: 'roboto';
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#firstP {
+    margin-top: -60px !important;
+}
+
+#lastP {
+    width: 100% !important;
+}
+
+#profile2 {
+    margin-bottom: -20px;
+    margin-left: 30px;
+    margin-right: 0px;
+}
+
+#profile3 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-right: 30px;
+    max-width: 230px;
+}
+
+div {
+    text-align: center;
+}
+
+a:focus {
+    color: #BADA55;
+}
+
+a:link {
+    color: #DEEBED;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFF;
+}
+
+#mail {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+#mail:hover {
+    color: #CACC95;
+}
+#contact{
+  font-size: 2.1em;
+  color:white;
+  background: #3e6e47;
+  height:auto;
+}
+
+#contact .title{
+    padding:0 ;
+}
+
+
+h1 {
+    margin: 5px;
+    color: #FFF;
+    font-family: raleway;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: Roboto;
+}
+
+h4 {
+    color: #FFF;
+    font-family: Roboto;
+}
+
+.emphasis {
+    font-size: 1.3em;
+    color:#2c88d8 
+}
+
+
+.deemphasis {
+    font-size: 0.5em;
+}
+
+.wrapper {
+    position:relative; 
+    overflow:hidden;
+    margin: auto;
+}
+
+#constrImg {
+    margin: -10px;
+    position: absolute;
+    max-width: 155px;
+    transform:translate(.1in,.5in);
+}
+
+#profile {
+    margin-top: -20px;
+    max-width: 200px;
+    border-radius: 1000px;
+    border: solid 5px #FCF950;
+}
+
+#under-construction {
+    transform:translate(-.5in,.05in);
+    max-width: 100px;
+    position: relative;
+    opacity: .8;
+    position: absolute;
+}
+
+.sm-under-construction {
+    max-width: 80px;
+    position: relative;
+    opacity: .8;
+    position: absolute;
+    z-index: 1;
+}
+
+footer {
+    color: #FFF;
+    text-align: center;
+    background-color: #15323E;
+    margin-top: 19px;
+    padding: 0px;
+    transform:translate();
+    overflow:hidden;
+}

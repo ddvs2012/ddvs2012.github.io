@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodoro Clock</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+
+	<audio id="tick" src="http://dalexander.info/portfolio/audio/tick.m4a" type="audio/m4a"></audio>
+	<audio id="ring" src="http://dalexander.info/portfolio/audio/ring.m4a" type="audio/m4a"></audio>
+	<audio id="breakTick" src="http://dalexander.info/portfolio/audio/breakTick.m4a" type="audio/m4a"></audio>
+	<audio id="breakOver" src="http://dalexander.info/portfolio/audio/breakOver.m4a" type="audio/m4a"></audio>
+
+</head>
+<body>
+	<h1 align="center" id="header">Pomodoro Timer</h1>
+
+	<div id="settings">
+		<div class="settingElement"  id="work">
+			<h3>Work</h3>
+			<div class="interface">
+				<button class="interfaceItems" onclick="decWM();" id='downWM'> - </button> 
+				<div class="interfaceItems" id="workMinutes">25</div>
+				<button class="interfaceItems" onclick="incWM();" id='upWM'> + </button>
+			</div>
+		</div>
+
+		<div class="settingElement" id="break">
+			<h3>Break</h3>
+			<div class="interface">
+				<button class="interfaceItems" onclick="decBM();" id='upBM'> - </button>
+				<div class="interfaceItems" id="breakMinutes">5</div>
+				<button class="interfaceItems" onclick="incBM();" id='downBM'> + </button>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="clock">
+		<div class="draw " id="timer" onclick="startStop();"></div>
+
+	</div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

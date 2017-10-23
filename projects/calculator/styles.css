@@ -1,0 +1,64 @@
+.wrapper{
+	  background: silver; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(170deg, silver, #b1afaf); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(170deg, silver, #b1afaf); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(170deg, silver, #b1afaf); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(170deg, silver, #b1afaf); /* Standard syntax */
+
+	padding:10px;
+	height:45rem;
+	width: 40rem;
+	margin:0 auto;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #000;  /*inset 0px 0px 0px 0px #515151 (for rounded 3d effect)*/
+}
+#zero{
+	transform: ;
+}
+
+.btn{
+	background-color: #429af9;
+	margin:10px;
+	width: 7rem;
+	font-size: 3rem !important;
+	border-bottom: solid #253 2px !important;
+}
+#clearEntry, #clear{
+	border-bottom: solid #930 2px !important;
+}
+#numDisplay{
+	background-color: #FFF;
+	font-size: 2.7rem;
+	margin:10px 10px;
+	padding: 10px;
+	overflow: hidden;
+}
+#process{
+	font-size: 1.2rem;
+	max-width: 34rem;
+	background-color: #AAFFF8;
+	overflow: hidden;
+	transform: translate(2rem,-2.7rem);
+	position: absolute;
+	align: right;
+}
+.equals{ /*made class because id '=' not accepted in css ?? is accepted in jquery*/
+	height: 4.3em;
+	margin-right:0;
+	transform: translate(-1rem)
+}
+.format{
+	z-index: -1 !important;
+}
+#zero{
+	width:16.5rem;
+}
+#thirdRow{
+	/*transform: translate(0,-1rem);*/
+}
+#fourthRow{
+	transform: translate(-9.4rem,-13.7rem)
+}
+#lastRow{
+	transform:translate(-9.4rem,-13.2rem);
+}

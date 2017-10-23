@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- font awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- jQuery -->
+	<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" ></script>
+	
+</head>
+
+<body>
+	<h1 align="center">Calculator</h1><hr>
+	<div class="wrapper" align="right">
+		<div id="numDisplay">0</div>
+		<div id='process'></div>		
+		<div id="firstRow">
+			<button id="clearEntry" class="btn btn-danger">CE</button>
+			<button id="clear" class="btn btn-danger">C</button>
+			<button id="/" class="btn ">&divide;</button>
+			<button id="*" class="btn ">&times;</button>
+		</div>
+		<div id="secondRow">
+			<button id="seven" class="btn ">7</button>
+			<button id="eight" class="btn ">8</button>
+			<button id="nine" class="btn ">9</button>
+			<button id="+" class="btn ">&plus;</button>
+		</div>
+		<div id="thirdRow">
+			<button id="six" class="btn ">6</button>
+			<button id="five" class="btn ">5</button>
+			<button id="four" class="btn ">4</button>
+			<button id="-" class="btn">&minus;</button>
+		</div>
+		<div><button id="=" class="btn equals" >&equals;</button></div> <!-- big button vert -->
+		<div id="fourthRow">
+			<button id="three" class="btn ">3</button>
+			<button id="two" class="btn ">2</button>
+			<button id="one" class="btn ">1</button>
+	
+		</div>
+		<div id="lastRow">
+			<button id="zero" class="btn ">0</button>  <!-- big button horiz -->
+			<button id="decimal" class="btn ">.</button>
+			 <!-- placeholder -->
+		</div>
+	</div>
+	<script type='text/javascript' src="script.js" async></script>
+</body><br><br>
+<footer>
+	<div align="center">
+		Created by <a href="http://www.dalexander.info/portfolio">Danny Alexander</a>
+	</div>	
+</footer>
+</html>
